@@ -1,0 +1,21 @@
+/* Busco el label que es primer hijo de algun padre*/
+label:first-child {
+font-size: x-large;
+color: red;
+}
+
+/* Busco el input que es segundo (por el nth-child(2)) de algun padre*/
+input:nth-child(2) {
+    font-size: x-large;
+} 
+
+label:nth-child(3n) {
+    font-size: xx-large;
+    color:cornflowerblue;
+}
+
+label::after {
+    content: "👀"; /* Insert content that looks like bullets */
+    padding-right: 8px;
+    color: blue; /* Or a color you prefer */
+}
